@@ -5,8 +5,9 @@ This project fetches images from NASA's Astronomy Picture of the Day (APOD) API 
 ## Live Demo
 
 You can view the project live [here](https://lambrugeorge.github.io/NASA-APOD/).
-## Screenshot
+## Screenshots
 ![Screenshot](1.png)
+![Screenshot](2.png)
 ## Usage 🚀
 
 - Upon loading the page, 10 random images from NASA's APOD API will be displayed.

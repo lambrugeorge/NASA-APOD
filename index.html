@@ -4,41 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA API Pictures</title>
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon for the page -->
     <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
-    <!-- ZTM Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <!--loader-->
+    <!-- Loader element, hidden by default -->
     <div class="loader hidden">
-        <img src="rocket.svg" alt="Rocker loading animation">
+        <img src="rocket.svg" alt="Rocket loading animation">
     </div>
-    <!--Container-->
+    <!-- Main container -->
     <div class="container">
-        <!-- Navigation -->
-         <div class="navigation-container">
+        <!-- Navigation section -->
+        <div class="navigation-container">
             <span class="background">
-                <!--Results Nav-->
+                <!-- Results Navigation -->
                 <span class="navigation-items" id="resultsNav">
-                    <h3 class="clickable">Favorites</h3>
+                    <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
                     <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
-                    <h3 class="clickable">Load More</h3>
+                    <h3 class="clickable" onclick="getNasaPictures()">More</h3>
                 </span>
             </span>
-            <!---Favorites Nav-->
+            <!-- Favorites Navigation -->
             <span class="navigation-items hidden" id="favoritesNav">
-                <h3 class="clickable">Load More Nasa Images</h3>
+                <h3 class="clickable" onclick="updateDOM('results')">Load More NASA Images</h3>
             </span>
-         </div>
-         <!--- Images contain\er-->
-         <div class="images-container"></div>
+        </div>
+        <!-- Container for displaying images -->
+        <div class="images-container"></div>
     </div>
-    <!---Save confirmation-->
+    <!-- Save confirmation message, hidden by default -->
     <div class="save-confirmed hidden">
         <h1>ADDED!</h1>
     </div>
-    <!-- Script -->
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
